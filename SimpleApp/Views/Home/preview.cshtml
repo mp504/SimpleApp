@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <!DOCTYPE html>
+    <html lang="en">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.1/marked.min.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Markdown Previewer</title>
+        <link rel="stylesheet" href="~/css/preview.css">
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <textarea id="editor" name="editor" rows="20" cols="120" placeholder="test"></textarea>
+            </div>
+            <div id="preview"></div>
+            <script src="~/js/PreviewScript.js"></script>
+        </div>
+    </body>
+    </html>
+}

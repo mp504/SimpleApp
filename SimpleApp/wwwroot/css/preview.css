@@ -1,0 +1,51 @@
+﻿@* For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860 *@ @ {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #container {
+        margin: 5px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #editor {
+        background-color: lightblue;
+        width: 48vw;
+        height: 90vh;
+    }
+
+    textarea {
+        padding: 5px;
+    }
+
+    #preview {
+        background-color: lightgreen;
+        overflow: scroll;
+        padding: 5px 25px;
+        width: 50vw;
+        height: 90vh;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    code, pre {
+        background-color: white;
+    }
+
+    @media (max-width: 940px) {
+        #container {
+            flex-direction: column;
+        }
+
+        #editor, #preview {
+            width: 95vw;
+            height: 48vh;
+        }
+    }
+}
